@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <title>Blood Bank</title>
+</head>
+<body>
+      <!-navigation start-  -->
+    <section class="fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand text-success" href="#">BloodBank</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarBasic">
+
+                    <form class="d-flex mt-3 mt-lg-0 ms-lg-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button type="button" class="d-lg-none btn btn-secondary"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        
+                    </form>
+
+                    <ul class="navbar-nav ms-auto mt-3 mt-lg-0 mb-2 mb-xl-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Client</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item text-white" href="#">Login</a></li>
+                              <li><hr class="dropdown-divider bg-secondary"></li>
+                              <li><a class="dropdown-item text-white" href="#">Register</a></li>
+                            </ul>
+                          </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Doners</a>
+                        </li>
+                        
+                        
+                    </ul>
+
+                    
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-navigation end-  -->
+
+
+    <!-- home Slider start -->
+    <section>
+        <div id="homeSlider" class="carousel slide position-relative" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#homeSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                <li data-bs-target="#homeSlider" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#homeSlider" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="./images/blood2.jpg" class="w-100 d-block" alt="First slide">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/blood1.jpg" class="w-100 d-block" alt="Second slide">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/blood3.jpg" class="w-100 d-block" alt="Third slide">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+
+            <div class="row position-absolute start-50" style="top: 100px !important;">
+                <div class="col-12">
+                    <div class="card p-3">
+                        <h4 class="card-header bg-transparent text-secondary-emphasis">Register Now</h4>
+                        <div class="card-body text-secondary">
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"placeholder="Enter your name...">
+                                    <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+      
+                                    <label for="" class="form-label mt-3">Email</label>
+                                    <input type="email" class="form-control" name="" id="" aria-describedby="helpId"placeholder="Enter your Email...">
+      
+                                    <label for="" class="form-label mt-3">Phone Number</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"placeholder="Enter your phone Number...">
+      
+                                    <label for="" class="form-label mt-3">Password</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"placeholder="Enter your password...">
+      
+                                    <label for="" class="form-label mt-3">Confirm Password</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"placeholder="Enter your confirm password...">
+      
+                                    <input type="submit" class="form-control btn btn-secondary mt-3" name="" id="" value="Register">
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- home Slider end -->
+
+
+    <!-- why donate blood start -->
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-success">
+                    <h3 class="text-center text-danger mb-5">কেন রক্তদান করবেন?</h3>
+                    <p>১. প্রথম এবং প্রধান কারণ, আপনার দানকৃত রক্ত একজন মানুষের জীবন বাঁচাবে। রক্তদানের জন্য এর থেকে বড় কারণ আর কি হতে পারে !</p>
+                    <p>২. হয়তো একদিন আপনার নিজের প্রয়োজনে/বিপদে অন্য কেউ এগিয়ে আসবে।</p>
+                    <p>৩. নিয়মিত রক্তদানে হৃদরোগ ও হার্ট অ্যাটাকের ঝুঁকি অনেক কম।</p>
+                    <p>৪. নিয়মিত স্বেচ্ছায় রক্তদানের মাধ্যমে বিনা খরচে জানা যায় নিজের শরীরে বড় কোনো রোগ আছে কিনা। যেমন : হেপাটাইটিস-বি, হেপাটাইটিস-সি, সিফিলিস, এইচআইভি (এইডস) ইত্যাদি।</p>
+                    <p>৫. দেহের রোগ প্রতিরোধ ক্ষমতা অনেকগুন বেড়ে যায়।</p>
+                    <p>৬. রক্তদান ধর্মীয় দিক থেকে অত্যন্ত পুণ্যের বা সওয়াবের কাজ। পবিত্র কোরআনের সূরা মায়েদার ৩২ নং আয়াতে আছে, ‘একজন মানুষের জীবন বাঁচানো সমগ্র মানব জাতির জীবন বাঁচানোর মতো মহান কাজ।’</p>
+                    <p>৭. নিজের মাঝে একধরনের আত্মতৃপ্তি উপলব্ধি করতে পারবেন । "আমাদের ছোট পরিসরের এই জীবনে কিছু একটা করলাম" এই অনুভুতি আপনার মনে জাগ্রত হবে এই ব্যাপারে নিশ্চিত করছি :)</p>
+                </div>
+
+                <div class="col-6">
+                    <h3 class="text-center text-danger mb-5">কিছু ভুল ধারনা </h3>
+                    <p>১. রক্ত দান করার সময় মোটেও ব্যথা লাগে না। শুধূমাত্র সূচ ফোটানোর সময় অল্প একটু অস্বস্তি লাগে।</p>
+                    <p>২. রক্তদানের পর স্বাস্থ্য খারাপ হয়ে যাবে - এটি ভুল ধারণা। আসলে রক্তদান করলে হৃদরোগের ঝুঁকি কমে এবং দেহে মাত্রাতিরিক্ত আয়রন বা লৌহ সঞ্চয় প্রতিরোধ করে।</p>
+                    <p>৩. ডায়াবেটিসে আক্রান্ত ব্যক্তি রক্ত দিতে পারবে না - এটিও ভুল ধারণা। স্বাস্থ্য পরীক্ষায় যোগ্য বিবেচিত হলে, ডায়াবেটিসে আক্রান্ত ব্যক্তি ততক্ষণ রক্ত দান করতে পারবেন, যতক্ষণ ওই ব্যক্তির রক্তের গ্লুকোজ লেভেল স্বীকৃত সীমার মধ্যে থাকবে।</p>
+                    <p>৪. উচ্চরক্তচাপের কারণে রক্তদান করা যায় না - এটিও ভুল ধারণা। রক্তদানের সময় ব্লাডপ্রেসার ১৮০সিষ্টোলিক ও ১০০ডায়াষ্টোলিকের মাঝে থাকলে রক্ত দেওয়া যায়।</p>
+                    <p>৫. রক্তদানের পর আপনি কোনো প্রকার অসস্থি বোধ করবেন না কিংবা অজ্ঞান হয়ে যাবেন না। এই ব্যাপারে অনেকের ভুল ধারণা রয়েছে।</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why donate blood end -->
+
+
+
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>
